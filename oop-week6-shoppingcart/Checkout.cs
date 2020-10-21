@@ -26,18 +26,6 @@ namespace oop_week6_shoppingcart
             Console.WriteLine($"The total checkout is {total} euros");
         }
 
-        /*public void Addapple()
-        {
-            Article apple = new Article();
-            apple.Price = 0.6M;
-            shopcart.Add(apple);
-        }
-
-        public void Addorange()
-        {
-            Article orange = new Article();
-            orange.Price = 0.25M;
-            shopcart.Add(orange);
-        }*/
+       
     }
 }
