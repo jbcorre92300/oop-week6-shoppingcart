@@ -10,17 +10,15 @@ namespace oop_week6_shoppingcart
     {
         static void Main(string[] args)
         {
-            Cart cart = new Cart();
-            Article apple = new Article();
-            Article orange = new Article();
+            List<Article> cart = new List<Article>();
+            Article Apple = new Article(0.6M);
+            Article Orange = new Article(0.25M);
 
-            cart.Addapple();
-            cart.Addorange();
+            cart.Add(Apple);
+            cart.Add(Orange);
 
-            cart.FinalCheckout();
-
-
-
+            Checkout check = new Checkout(cart);
+            check.FinalCheckout();
 
         }
     }

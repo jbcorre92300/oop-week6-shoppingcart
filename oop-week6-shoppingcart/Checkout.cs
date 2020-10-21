@@ -6,27 +6,27 @@ using System.Linq;
 
 namespace oop_week6_shoppingcart
 {
-    public class Cart
+    public class Checkout
     {
-        public List<Article> shopcart;
+        public List<Article> Shopcart { get; set; }
 
-        public Cart()
+        public Checkout(List<Article> cart)
         {
-            //Shopcart = shopcart;
+            Shopcart = cart;
         }
         
-        public List<Article> Shopcart { get; set; }
+        
         public void FinalCheckout()
         {
             decimal total =0;
-            foreach (Article article in shopcart)
+            foreach (Article article in Shopcart)
             {
-                total += article.price;
+                total += article.Price;
             }
             Console.WriteLine($"The total checkout is {total} euros");
         }
 
-        public void Addapple()
+        /*public void Addapple()
         {
             Article apple = new Article();
             apple.Price = 0.6M;
@@ -38,6 +38,6 @@ namespace oop_week6_shoppingcart
             Article orange = new Article();
             orange.Price = 0.25M;
             shopcart.Add(orange);
-        }
+        }*/
     }
 }

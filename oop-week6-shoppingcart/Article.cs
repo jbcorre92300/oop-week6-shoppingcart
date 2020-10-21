@@ -8,11 +8,11 @@ namespace oop_week6_shoppingcart
 {
     public class Article
     {
-        public decimal price;
-        public Article()
+        public decimal Price { get; set; }
+        public Article(decimal price)
         {
             Price = price;
         }
-        public decimal Price { get; set; }
+       
     }
 }
