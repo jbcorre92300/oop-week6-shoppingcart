@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Collections;
+using System.Linq;
 
 namespace oop_week6_shoppingcart
 {
@@ -6,7 +10,18 @@ namespace oop_week6_shoppingcart
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Cart cart = new Cart();
+            Article apple = new Article();
+            Article orange = new Article();
+
+            cart.Addapple();
+            cart.Addorange();
+
+            cart.FinalCheckout();
+
+
+
+
         }
     }
 }
